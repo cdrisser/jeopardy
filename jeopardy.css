@@ -1,0 +1,12 @@
+#main-board{
+  display:flex;
+  flex-direction: column;
+  width:25%;
+  margin:auto;
+}
+body{
+  background-color:#060CE9;
+}
+h1, h3{
+  text-align: center;
+}
