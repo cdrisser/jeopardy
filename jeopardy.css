@@ -1,12 +1,25 @@
+html{
+  font-family: Korinna, serif;
+}
 #main-board{
   display:flex;
-  flex-direction: column;
   width:25%;
   margin:auto;
 }
 body{
   background-color:#060CE9;
 }
-h1, h3{
+h1, h3, p{
   text-align: center;
+}
+#each-col{
+  display: flex;
+}
+.col{
+  display:flex;
+  flex-direction: column;
+}
+button{
+  font-family: Korinna, serif;
+  color:black;
 }
