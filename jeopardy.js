@@ -6,6 +6,9 @@ $('.col').remove();
 //send number of column requested to function to dynamicaly load
 
   addCols(Number($('#col-options').val()));
+  //hides board while data loads from api
+  $('#main-board').hide();
+
   });
 });
 
@@ -27,6 +30,8 @@ function loadQuestions(answers,colnum){
         },7000)
      });
   }
+  //shows board after data loads from api
+  $('#main-board').show();
 }
 function addCols(numCols){
   console.log(numCols);
@@ -60,7 +65,8 @@ function createTitle(ans, numCols){
   for(let i =0; i<numCols; i++){
     console.log(numCols);
   const randomnumber = Math.floor(Math.random()*(100-1)+1);
-  document.getElementById(`category${i}`).innerHTML = ans[randomnumber].title;
+  const newstr = ans[randomnumber].title.replace(/\b\w/g, l => l.toUpperCase());
+  document.getElementById(`category${i}`).innerHTML = newstr;
   fetchQandAs(ans[randomnumber].id, i );
 }
 }

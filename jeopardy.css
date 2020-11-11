@@ -1,3 +1,6 @@
+html{
+  font-family: Korinna, serif;
+}
 #main-board{
   display:flex;
   width:25%;
@@ -15,4 +18,8 @@ h1, h3, p{
 .col{
   display:flex;
   flex-direction: column;
+}
+button{
+  font-family: Korinna, serif;
+  color:black;
 }
