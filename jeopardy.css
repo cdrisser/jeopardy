@@ -1,6 +1,5 @@
 #main-board{
   display:flex;
-  flex-direction: column;
   width:25%;
   margin:auto;
 }
@@ -9,4 +8,11 @@ body{
 }
 h1, h3, p{
   text-align: center;
+}
+#each-col{
+  display: flex;
+}
+.col{
+  display:flex;
+  flex-direction: column;
 }
