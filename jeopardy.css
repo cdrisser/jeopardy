@@ -9,6 +9,9 @@ html{
 body{
   background-color:#060CE9;
 }
+h1{
+font-family:anonymous;    
+}
 h1, h3, p{
   text-align: center;
 }
@@ -22,4 +25,23 @@ h1, h3, p{
 button{
   font-family: Korinna, serif;
   color:black;
+}
+
+.jeopardy-logo {
+    max-width: 100%;
+    margin:  25px auto;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.column-select {
+    
+}
+.buttons{
+    margin-bottom: 25px;
 }

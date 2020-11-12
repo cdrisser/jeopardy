@@ -1,11 +1,12 @@
 
 $(document).ready(()=>{
-  $('#col-options').change(()=>{
+  $("button").click(()=>{
 //remove column in case it middle of Game
 $('.col').remove();
 //send number of column requested to function to dynamicaly load
-
-  addCols(Number($('#col-options').val()));
+ let colSend = $("button").val();
+      console.log($(document.activeElement).val());
+  addCols(Number($(document.activeElement).val()));
   //hides board while data loads from api
   $('#main-board').hide();
 
